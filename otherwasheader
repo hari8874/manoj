@@ -1,0 +1,34 @@
+
+#include "fun.h"
+
+int main()
+{
+
+    int flag=0;
+    char choice;
+    int s=1;
+
+printf("Do you want to establish connection(y/n)?\n");
+
+scanf(" %c",&choice);
+if(flag==2){printf("communication done successfully\n");}
+else if(flag==1) {printf("connected yet to communicate\n");}
+else{printf("not connected\n");}
+if(choice=='n'){return 0;}
+
+
+ char input;
+ while(s==1)
+{
+  printf("pleaser input server as s or client as c\n");
+  scanf(" %c",&input);
+
+if(input=='s')
+{server();}
+else if(input=='c')
+{client();}
+}
+printf("1.continue   /n anything for exit");
+ scanf("%d",&s);
+ return 0; 
+}
